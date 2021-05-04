@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "product": "Bread - Mini Hamburger Bun",
+    "price": 15.8,
+    "quantity": 4
+  },
+  { "id": 2, "product": "Extract - Lemon", "price": 64.02, "quantity": 12 },
+  {
+    "id": 3,
+    "product": "Ecolab - Lime - A - Way 4/4 L",
+    "price": 99.75,
+    "quantity": 22
+  },
+  {
+    "id": 1000,
+    "product": "Soup - Campbells, Cream Of",
+    "price": 50.1,
+    "quantity": 5
+  }
+]
