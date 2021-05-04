@@ -1,8 +1,13 @@
-import Link from "next/link";
+import { Info } from "../components/Info";
+import { Main } from "../components/Main";
+import { Navigation } from "../components/Navigation";
+
 export default function Home() {
   return (
     <>
-      <Link href="/products">Check out products</Link>
+      <Navigation />
+      <Main />
+      <Info />
     </>
   );
 }

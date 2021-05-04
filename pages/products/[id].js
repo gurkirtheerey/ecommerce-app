@@ -12,6 +12,7 @@ export async function getStaticProps({ params }) {
   const res = await fetch(`http://localhost:3000/MOCK_DATA.json`);
   const data = await res.json();
   const product = data.filter((item) => item.product === id);
+  console.log(product);
   return {
     props: { product },
   };
