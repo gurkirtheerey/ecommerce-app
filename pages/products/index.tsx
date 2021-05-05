@@ -13,7 +13,8 @@ export async function getStaticProps() {
   };
 }
 
-const Products = ({ data }) => {
+const Products = ({ data, session }) => {
+  console.log("PAGE PROPS: ", session);
   return (
     <>
       <Head>

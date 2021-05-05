@@ -2,6 +2,7 @@ import Link from "next/link";
 import React, { useContext, useEffect } from "react";
 import UserContext from "../context/userContext";
 import ProductProps from "../types/Product";
+import { Provider } from "next-auth/client";
 
 export const Product: React.FC<ProductProps> = ({
   product,
@@ -18,7 +19,7 @@ export const Product: React.FC<ProductProps> = ({
     <div className="hover:bg-gray-100 shadow hover:shadow-xl rounded-lg transition duration-200 ease-in h-96 w-64 flex flex-col items-center justify-between">
       <Link href={`/products/${encodeURIComponent(product)}`}>
         <a>
-          <img src={image} className="h-64 w-full rounded-lg" />
+          <img src="shoe.jpeg" className="h-64 w-full rounded-lg" />
           <h4 className="italic text-sm hover:text-indigo-600 m-4">
             {product}
           </h4>
