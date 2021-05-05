@@ -3,19 +3,56 @@
     "id": 1,
     "product": "Bread - Mini Hamburger Bun",
     "price": 15.8,
-    "quantity": 4
+    "quantity": 4,
+    "image": "https://cdn.pixabay.com/photo/2017/04/06/11/24/fashion-2208045_960_720.jpg"
   },
-  { "id": 2, "product": "Extract - Lemon", "price": 64.02, "quantity": 12 },
+  {
+    "id": 2,
+    "product": "Extract - Lemon",
+    "price": 64.02,
+    "quantity": 12,
+    "image": "https://cdn.pixabay.com/photo/2017/04/06/11/24/fashion-2208045_960_720.jpg"
+  },
   {
     "id": 3,
     "product": "Ecolab - Lime - A - Way 4/4 L",
     "price": 99.75,
-    "quantity": 22
+    "quantity": 22,
+    "image": "https://cdn.pixabay.com/photo/2017/04/06/11/24/fashion-2208045_960_720.jpg"
+  },
+  {
+    "id": 4,
+    "product": "Lemon Pepper",
+    "price": 29.08,
+    "quantity": 11,
+    "image": "https://cdn.pixabay.com/photo/2017/04/06/11/24/fashion-2208045_960_720.jpg"
+  },
+  {
+    "id": 5,
+    "product": "Cheese - Shred Cheddar / Mozza",
+    "price": 70.85,
+    "quantity": 16,
+    "image": "https://cdn.pixabay.com/photo/2017/04/06/11/24/fashion-2208045_960_720.jpg"
+  },
+  {
+    "id": 6,
+    "product": "Tomatillo",
+    "price": 31.15,
+    "quantity": 19,
+    "image": "https://cdn.pixabay.com/photo/2017/04/06/11/24/fashion-2208045_960_720.jpg"
+  },
+  {
+    "id": 7,
+    "product": "Butcher Twine 4r",
+    "price": 51.85,
+    "quantity": 23,
+    "image": "https://cdn.pixabay.com/photo/2017/04/06/11/24/fashion-2208045_960_720.jpg"
   },
   {
     "id": 1000,
     "product": "Soup - Campbells, Cream Of",
     "price": 50.1,
-    "quantity": 5
+    "quantity": 5,
+    "image": "https://cdn.pixabay.com/photo/2017/04/06/11/24/fashion-2208045_960_720.jpg"
   }
 ]

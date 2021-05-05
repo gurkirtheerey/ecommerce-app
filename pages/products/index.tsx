@@ -1,8 +1,8 @@
 import React from "react";
 import Head from "next/head";
 import data from "../../public/MOCK_DATA.json";
-import { useRouter } from "next/router";
-import Link from "next/link";
+import { Product } from "../../components/Product";
+import { Navigation } from "../../components/Navigation";
 
 export async function getStaticProps() {
   const response = await data;
@@ -19,16 +19,24 @@ const Products = ({ data }) => {
       <Head>
         <title>Products</title>
       </Head>
-      <div>
-        {data.map((res) => (
-          <Link
-            href={`/products/${encodeURIComponent(res.product)}`}
-            key={res.id}
-          >
-            <p>{res.product}</p>
-          </Link>
-        ))}
-      </div>
+      <>
+        <Navigation />
+        <div className="h-32">
+          <h1>Today's Deals</h1>
+        </div>
+        <div className="flex grid grid-cols-6 gap-4">
+          {data.map((res) => (
+            <React.Fragment key={res.id}>
+              <Product
+                image={res.image}
+                product={res.product}
+                price={res.price}
+                quantity={res.quantity}
+              />
+            </React.Fragment>
+          ))}
+        </div>
+      </>
     </>
   );
 };

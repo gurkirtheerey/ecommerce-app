@@ -1,7 +1,16 @@
-import '../styles/globals.css'
+import { useState } from "react";
+import "tailwindcss/tailwind.css";
+import UserContext from "../context/userContext";
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const MyApp = ({ Component, pageProps }) => {
+  const [user, setUser] = useState({ email: "", username: "" });
+  const [cart, setCart] = useState([]);
 
-export default MyApp
+  return (
+    <UserContext.Provider value={{ user, cart, setUser, setCart }}>
+      <Component {...pageProps} />
+    </UserContext.Provider>
+  );
+};
+
+export default MyApp;

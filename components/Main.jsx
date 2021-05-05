@@ -1,46 +1,23 @@
 import React from "react";
-import styled from "styled-components";
-import { Button } from "./Button";
 import MainContainerSVG from "./SVG/MainContainerSVG";
-
-const MainContainer = styled.div`
-  height: 40rem;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  place-items: center;
-  background: #d5daec;
-`;
-
-const LeftContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: auto;
-`;
-
-const Header = styled.h1`
-  font-size: 2.7rem;
-`;
-
-const Paragraph = styled.p`
-  color: #72788d;
-  margin: 0.5rem 0;
-`;
 
 export const Main = () => {
   return (
-    <MainContainer>
-      <LeftContainer>
-        <Header>Create. Inspire. Grow</Header>
-        <Paragraph>
+    <div className="flex bg-indigo-300 items-center justify-evenly">
+      <div>
+        <h4 className="text-4xl font-bold my-4">Create. Inspire. Grow</h4>
+        <p className="text-gray-700 mb-2">
           Upload your design, art, or creation and <strong>flourish</strong>.
-        </Paragraph>
-        <Paragraph>
+        </p>
+        <p className="text-gray-700 mb-4">
           Small businesses like you need a middle ground. Here's where we come
           in.
-        </Paragraph>
-        <Button title="Start Your Free Trial" />
-      </LeftContainer>
+        </p>
+        <button className="bg-indigo-600 py-4 px-8 text-white hover:bg-indigo-700 rounded">
+          Start Your Free Trial
+        </button>
+      </div>
       <MainContainerSVG />
-    </MainContainer>
+    </div>
   );
 };

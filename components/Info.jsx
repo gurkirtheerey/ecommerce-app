@@ -1,60 +1,35 @@
 import React from "react";
-import styled from "styled-components";
-
-const Container = styled.div`
-  height: 20rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;
-
-const InfoContainer = styled.div`
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 100%;
-`;
-
-const ImportantInfo = styled.p`
-  color: #725cff;
-  font-weight: bold;
-  font-size: 2rem;
-  text-align: center;
-  padding: 0;
-`;
-
-const SecondaryParagraph = styled.p`
-  text-align: center;
-  color: #72788d;
-  font-weight: 600;
-`;
 
 export const Info = () => {
   return (
-    <Container>
-      <h1>Trusted by over 5000+ innovators</h1>
-      <p>
+    <div className="flex flex-col justify-center items-center h-96 w-full">
+      <h1 className="text-4xl font-semibold my-4">
+        Trusted by over 5000+ innovators
+      </h1>
+      <p className="text-gray-600 my-2">
         We look forward to seeing your art and creative design change the world.
-        For the better.
+        <strong> For the better.</strong>
       </p>
-      <InfoContainer>
-        <div>
-          <ImportantInfo>$500k+</ImportantInfo>
-          <SecondaryParagraph>Revenue</SecondaryParagraph>
+      <div className="flex justify-evenly w-full my-8">
+        <div className="flex flex-col items-center">
+          <span className="text-indigo-300 text-3xl font-bold my-4">
+            $500k+
+          </span>
+          <p className="font-semibold ">Revenue</p>
         </div>
-        <div>
-          <ImportantInfo>200+</ImportantInfo>
-          <SecondaryParagraph>Products</SecondaryParagraph>
+        <div className="flex flex-col items-center">
+          <span className="text-indigo-300 text-3xl font-bold my-4">200+</span>
+          <p className="font-semibold ">Products</p>
         </div>
-        <div>
-          <ImportantInfo>15</ImportantInfo>
-          <SecondaryParagraph>Categories</SecondaryParagraph>
+        <div className="flex flex-col items-center">
+          <span className="text-indigo-300 text-3xl font-bold my-4">15</span>
+          <p className="font-semibold ">Categories</p>
         </div>
-        <div>
-          <ImportantInfo>1</ImportantInfo>
-          <SecondaryParagraph>Employee</SecondaryParagraph>
+        <div className="flex flex-col items-center">
+          <span className="text-indigo-300 text-3xl font-bold my-4">1</span>
+          <p className="font-semibold ">Employee</p>
         </div>
-      </InfoContainer>
-    </Container>
+      </div>
+    </div>
   );
 };
