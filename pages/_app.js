@@ -7,8 +7,6 @@ const MyApp = ({ Component, pageProps }) => {
   const [user, setUser] = useState({ email: "", username: "" });
   const [cart, setCart] = useState([]);
 
-  console.log(pageProps);
-
   return (
     <Provider session={pageProps.session}>
       <UserContext.Provider value={{ user, cart, setUser, setCart }}>

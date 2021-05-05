@@ -3,8 +3,7 @@ import { Main } from "../components/Main";
 import { Navigation } from "../components/Navigation";
 import Head from "next/head";
 
-export default function Home(pageProps) {
-  console.log("HOME PROPS: ", pageProps);
+export default function Home(props) {
   return (
     <>
       <Head>

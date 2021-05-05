@@ -1,16 +1,13 @@
 import React, { useContext, useEffect, useState } from "react";
 import Link from "next/link";
 import UserContext from "../context/userContext";
-import { useSession, signIn, signOut } from "next-auth/client";
+import { useSession, signIn } from "next-auth/client";
 import { FaShoppingCart } from "react-icons/fa";
 
 export const Navigation = () => {
   const { cart } = useContext(UserContext);
   const [length, setLength] = useState(0);
   const [session] = useSession();
-  if (session) {
-    console.log("in session: ", session);
-  }
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -31,10 +28,10 @@ export const Navigation = () => {
           <Link href="/products">Products</Link>
         </span>
         <span className="text-black hover:text-indigo-800 font-semibold">
-          <Link href="/products">Blog</Link>
+          <Link href="/profile">My Account</Link>
         </span>
         <span className="text-black hover:text-indigo-800 font-semibold">
-          <Link href="/profile">My Account</Link>
+          <Link href="/products">Blog</Link>
         </span>
       </div>
       <div className="w-48 flex justify-around items-center">
@@ -55,7 +52,7 @@ export const Navigation = () => {
           </>
         ) : (
           <Link href="/cart">
-            <div className="flex text-black hover:text-indigo-800 font-semibold">
+            <div className="flex text-black hover:text-indigo-800 font-semibold cursor-pointer">
               <FaShoppingCart color="black" size={25} />
               <span className="text-xs font-semibold mb-1 pl-1 cursor-pointer">
                 {length}

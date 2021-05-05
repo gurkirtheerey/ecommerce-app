@@ -3,4 +3,5 @@ export default interface ProductProps {
   price: number;
   quantity: number;
   image: string;
+  onClick?: () => void;
 }
