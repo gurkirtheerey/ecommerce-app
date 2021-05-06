@@ -54,5 +54,29 @@
     "price": 50.1,
     "quantity": 5,
     "image": "https://cdn.pixabay.com/photo/2017/04/06/11/24/fashion-2208045_960_720.jpg"
-  }
+  },
+  { "id": 19, "product": "Oil - Olive", "price": 22.42, "quantity": 19 },
+  {
+    "id": 20,
+    "product": "Lid Coffeecup 12oz D9542b",
+    "price": 41.0,
+    "quantity": 20
+  },
+  { "id": 21, "product": "Beer - Labatt Blue", "price": 11.08, "quantity": 20 },
+  {
+    "id": 22,
+    "product": "Spice - Onion Powder Granulated",
+    "price": 58.35,
+    "quantity": 18
+  },
+  {
+    "id": 23,
+    "product": "Water - Spring 1.5lit",
+    "price": 94.69,
+    "quantity": 21
+  },
+  { "id": 24, "product": "Pear - Asian", "price": 57.24, "quantity": 19 },
+  { "id": 25, "product": "Foil Wrap", "price": 57.19, "quantity": 15 },
+  { "id": 26, "product": "Lady Fingers", "price": 45.3, "quantity": 14 },
+  { "id": 27, "product": "Crab - Blue, Frozen", "price": 82.58, "quantity": 6 }
 ]

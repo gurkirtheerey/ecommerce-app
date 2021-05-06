@@ -18,7 +18,7 @@ export const Main = () => {
           onClick={() => signIn()}
           className="bg-indigo-600 py-4 px-8 text-white hover:bg-indigo-700 rounded"
         >
-          Start Your Free Trial
+          Sign Up To Shop!
         </button>
       </div>
       <MainContainerSVG />
