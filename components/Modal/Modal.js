@@ -18,8 +18,6 @@ export const Modal = ({ toggleOff, item }) => {
     setSize(document.body.scrollHeight);
   });
 
-  console.log(document.body.scrollHeight);
-
   return (
     <div
       className={styles.container}

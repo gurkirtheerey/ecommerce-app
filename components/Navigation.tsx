@@ -3,16 +3,17 @@ import Link from "next/link";
 import UserContext from "../context/userContext";
 import { useSession, signIn, signOut } from "next-auth/client";
 import { FaShoppingCart } from "react-icons/fa";
+import { Loader } from "./Loader/Loader";
 
 export const Navigation = () => {
   const { cart } = useContext(UserContext);
   const [length, setLength] = useState(0);
   const [hovered, setHovered] = useState(false);
-  const [session] = useSession();
+  const [session, loading] = useSession();
 
   useEffect(() => {
     if (typeof window !== "undefined") {
-      setLength(cart.length);
+      setLength(cart?.length || 0);
     }
   }, [cart]);
 
@@ -58,7 +59,7 @@ export const Navigation = () => {
           </div>
         </div>
       ) : (
-        <div className="flex w-1/5 justify-evenly items-center z-0">
+        <div className="flex w-1/3 justify-center items-center">
           <div
             onMouseOver={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
@@ -113,7 +114,7 @@ export const Navigation = () => {
             )}
           </div>
           <Link href="/cart">
-            <div className="flex text-black hover:text-indigo-800 font-semibold cursor-pointer">
+            <div className="flex text-black hover:text-indigo-800 font-semibold cursor-pointer p-4">
               <FaShoppingCart color="black" size={25} />
               <span className="text-xs font-semibold mb-1 pl-1 cursor-pointer">
                 {length}

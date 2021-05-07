@@ -22,7 +22,7 @@ const useStripeCheckout = async (url, cart) => {
         console.log("unable to receive stripe session");
       }
     } catch (e) {
-      console.log("unable to send API request ");
+      console.log("unable to send API request ", e);
     }
   } catch (e) {
     console.log("unable to create promise");

@@ -9,6 +9,7 @@ module.exports = {
       animation: ["hover", "focus"],
       opacity: ["disabled"],
       cursor: ["disabled", "hover", "focus"],
+      backgroundColor: ["active"],
     },
   },
   plugins: [],

@@ -5,6 +5,7 @@ import { loadStripe } from "@stripe/stripe-js";
 import { Navigation } from "./Navigation";
 import Link from "next/link";
 import useStripeCheckout from "../hooks/useStripeCheckout";
+import Cookie from "js-cookie";
 
 const stripePromise = loadStripe("pk_test_XOf0XArkLI9qQDKK7unsnEXB00YZwpLBn7");
 
@@ -32,6 +33,7 @@ export const Checkout = () => {
 
   const removeFromCart = async (product: any) => {
     const found = cart.filter((p) => p.product !== product.product);
+    Cookie.set("cart", JSON.stringify(found));
     setCart(found);
   };
 

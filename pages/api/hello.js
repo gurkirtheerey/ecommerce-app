@@ -5,6 +5,7 @@ const stripeCheckout = stripe("sk_test_zeuoyefdeD1eyCzSMooHos3J00Sck7wMyT");
 
 export default async (req, res) => {
   const data = req.body.data;
+
   const items = data.map((item) => {
     item.price_data = {};
     item.price_data.currency = "usd";
@@ -14,6 +15,7 @@ export default async (req, res) => {
       images: [item.image],
     };
     item.quantity = data.filter((i) => i.product === item.product).length;
+    delete item.id;
     delete item.price;
     delete item.product;
     delete item.image;

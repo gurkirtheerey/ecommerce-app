@@ -11,12 +11,15 @@
     "@prisma/client": "^2.22.0",
     "@stripe/stripe-js": "^1.14.0",
     "axios": "^0.21.1",
+    "cookie": "^0.4.1",
+    "js-cookie": "^2.2.1",
     "next": "10.2.0",
     "next-auth": "^3.19.8",
     "prisma": "^2.22.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-icons": "^4.2.0",
+    "react-spinners": "^0.10.6",
     "stripe": "^8.146.0"
   },
   "devDependencies": {
