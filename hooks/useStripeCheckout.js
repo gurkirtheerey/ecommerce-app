@@ -2,6 +2,8 @@ import { loadStripe } from "@stripe/stripe-js";
 import axios from "axios";
 const stripePromise = loadStripe("pk_test_XOf0XArkLI9qQDKK7unsnEXB00YZwpLBn7");
 
+// strip checkout
+
 const useStripeCheckout = async (url, cart) => {
   try {
     const stripe = await stripePromise;
